@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+};
+*{
+    margin: 0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Oxygen', Helvetica, Arial !important;
+    font-size:12px;  
+}
+body {
+    overflow-x: hidden; 
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+p {
+    color:#314736;
+}
+h1, h2 {
+    color:#87bd2e;
+}
+h3,h5 {
+    color:#e77916;
+}
+/* HEADER */
+
+header {
+    height:auto;
+}
+.logo {
+    width: 3.5em;
+}
+.navbar-expand-lg {
+    background-color:#222!important;
+}
+.nav-link {
+    color: #e77916 !important;
+    font-weight: 400 !important;
+    font-size: 1em;
+}
+.nav-link:hover {
+    color: #87bd2e !important;
+} 
+.navbar-toggler{
+    outline: none !important;
+}
+.social-networks a {
+    color:#e77916;
+}
+.social-networks a:hover {
+    color:#87bd2e;
+}
+/* MAIN */
+.logo-slide {
+    width:auto;
+}
+.banner {
+    background-image:url('/assets/images/agropet-slide1.png');
+    height: 80vh;
+    width:100%;
+    background-size:cover;
+    background-position:center;
+    overflow:hidden;
+}
+.banner .slide {
+    width:100vw;
+    height:100%;
+    display:inline-block;
+    background-color:#0000008a;
+}
+.banner .slidearea {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    height:100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    text-align: center;
+}
+.slidearea h2{
+    color:#FFF !important;
+}
+.ball {
+    position:fixed;
+    border-radius: 100%;
+    opacity: 0.3;
+}
+.nossa-historia-right-content{
+    margin-bottom: 1.5em;
+    width: 100%;
+}
+.nossa-historia-right-content-video{
+    width: 100%;
+}
+.card {
+    -webkit-transition: -webkit-transform 1.3s;
+    transition: -webkit-transform 1.3s;
+    -o-transition: transform 1.3s;
+    transition: transform 1.3s;
+    transition: transform 1.3s, -webkit-transform 1.3s;
+    
+}
+.card:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 0.9;
+    cursor:pointer;
+}
+.btn-primary a {
+    text-decoration: none;
+    outline: none;
+}
+.btn-primary {
+    background-color:#e77916 !important;
+    border-color: #e77916 !important;
+}
+.btn-primary:hover {
+    background-color:#a04f08 !important;
+}
+form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+/* FOOTER */
+.footer-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.copyrigth a{
+    text-decoration: none;
+}
+.endereco-footer{
+    font-size: 0.9em;
+}
+#subir{
+	position:fixed;
+	bottom:0px;
+	right:0px;
+    z-index: 1;
+    opacity: 0.4;
+    text-decoration: none;
+    outline-style: none;
+}
+.whatsapp a{
+    text-decoration: none;
+    color:#e77916;
+}
+/* Responsividade */
+
+@media only screen and (max-width: 767px) {
+    .card-content {
+        padding-bottom: 1.5em;
+        margin-bottom: 1.5em;
+    }
+    .footer-social {
+        display: none;
+    }
+}
