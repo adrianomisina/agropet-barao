@@ -67,7 +67,7 @@ header {
     width:auto;
 }
 .banner {
-    background-image:url("assets/images/agropet-slide1.jpg");
+    background-image:url('/assets/images/agropet-slide1.png');
     height: 80vh;
     width:100%;
     background-size:cover;
